@@ -31,6 +31,10 @@ function calcular() {
     }
 }
 
+function borrarUno() {
+    pantalla.value = pantalla.value.slice(0, -1);
+}
+
 document.addEventListener("keydown", function(event){
     let tecla = event.key;
 

@@ -4,46 +4,62 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background: #726e6e;
     font-family: Arial, sans-serif;
 }
 
 .calculadora {
     width: 320px;
-    padding: 20px;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    padding: 25px;
+    border-radius: 25px;
+
+    background: #a3475e;
+
+    border: 1px solid rgb(0, 0, 0);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.6);
 }
 
 #pantalla {
-    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    color: rgb(0, 0, 0);
+    width: 97%;
     height: 70px;
-    border: none;
+    border: 1px solid rgb(0, 0, 0);
     outline: none;
-    border-radius: 15px;
+    border-radius: 5px;
     margin-bottom: 15px;
     font-size: 30px;
     text-align: right;
     padding: 10px;
     box-sizing: border-box;
-    background: #f3f3f3;
+     background: #dbced2;
+     box-shadow: 0 3px 6px rgba(0,0,0,0.5);
 }
 
 .botones {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    align-items: center;
     gap: 10px;
+     background:#a3475e;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2px;
 }
 
 button {
+    width: 95%;
     height: 60px;
-    border: none;
-    border-radius: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
     font-size: 22px;
     cursor: pointer;
     transition: 0.2s;
-    background: #e9ecef;
+    margin: 1px;
+      background: #a3475e;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.5);
 }
 
 button:hover {
@@ -55,19 +71,17 @@ button:active {
 }
 
 button:nth-child(4n) {
-    background: #74c0fc;
-    color: white;
+    background: #a3475e;
 }
 
 button:nth-child(15),
 button:nth-child(16) {
-    background: #ff8787;
-    color: white;
+  background: #a3475e;
 }
 
 .igual {
     grid-column: span 4;
-    background: #51cf66 !important;
-    color: white;
+    background: #a3475e;
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
